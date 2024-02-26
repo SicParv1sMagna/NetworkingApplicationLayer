@@ -1,0 +1,27 @@
+.input-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+
+    .MuiOutlinedInput-notchedOutline {
+        transition: .2s;
+    }
+
+    .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: #2196f3;
+    }
+
+    .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        color: #2196f3;
+    }
+
+    .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #2196f3;
+    }
+
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+
+    img {
+        width: 2rem;
+    }
+
+    h1 {
+        color: #2196F3;
+        font-size: 1.5em;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+}
