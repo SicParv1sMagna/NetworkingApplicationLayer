@@ -1,9 +1,10 @@
 import Logo from '../../entity/logo';
 import './index.scss';
-import { blue } from '@mui/material/colors';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import MessageInput from '../../widgets/input';
-import { LightButton } from '../../entity/Buttons';
+import { LightButton } from '../../entity/buttons';
+import InMessage from '../../entity/messages/in_message';
+import OutMessage from '../../entity/messages/out_message';
 
 
 const Chat = () => {
@@ -16,9 +17,22 @@ const Chat = () => {
                     <LightButton variant="outlined" endIcon={<ArrowForwardIosOutlinedIcon />}>Выйти</LightButton>
                 </div>
             </div>
-            <div className='chat--body' style={{ backgroundColor: blue[50] }}>
-                <div className='massages'>
-                    СООБЩЕНИЯ
+            <div className='chat--body'>
+                <div className='messages'>
+                    <h1>Сегодня</h1>
+                    <div className='messages--list'>
+                        <OutMessage
+                            name='Ирина'
+                            text='Привет! А вы уже пользовались новым быстрым чатом FlyChat?'
+                            time='22:07'
+                            status='sent'
+                        />
+                        <InMessage
+                            text='Всем привет!'
+                            time='22:05'
+                            status='sent'
+                        />
+                    </div>
                 </div>
                 <MessageInput />
             </div>

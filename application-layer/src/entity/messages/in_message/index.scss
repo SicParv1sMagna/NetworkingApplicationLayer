@@ -1,0 +1,40 @@
+.in-message {
+    width: 100%;
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .in-message--body {
+        width: fit-content;
+        background-color: #2196F3;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h2 {
+            font-size: 1em;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 0.75em;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: right;
+            
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+}

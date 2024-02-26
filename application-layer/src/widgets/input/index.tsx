@@ -1,9 +1,9 @@
-import { TextField, TextFieldProps, colors } from '@mui/material';
+import { TextField, TextFieldProps } from '@mui/material';
 import './index.scss';
 import { styled } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import { SendFab } from '../../entity/Buttons';
+import { SendFab } from '../../entity/buttons';
 
 const ColorTextField = styled(TextField)<TextFieldProps>(() => ({
     color: blue[500],
@@ -15,7 +15,7 @@ const ColorTextField = styled(TextField)<TextFieldProps>(() => ({
     },
 }));
 
-const MessageInput = (value: any) => {
+const MessageInput = () => {
     return (
         <form className='input-form'>
             <ColorTextField
