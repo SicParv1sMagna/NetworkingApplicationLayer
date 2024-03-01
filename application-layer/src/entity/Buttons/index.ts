@@ -14,7 +14,9 @@ export const LightButton = styled(Button)<ButtonProps>(() => ({
 
 export const DarkButton = styled(Button)<ButtonProps>(() => ({
     backgroundColor: blue[500],
+    width: '100%',
     color: 'white',
+    fontWeight: 600,
     '&:hover': {
         backgroundColor: blue[600],
     },

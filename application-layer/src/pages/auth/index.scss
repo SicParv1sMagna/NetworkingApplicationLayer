@@ -1,0 +1,53 @@
+.auth {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/greg-rosenke-ULCnJXu9XhE-unsplash.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .auth-window {
+        // position: absolute;
+        // top: 30vh;
+        // left: 34vw;
+        // height: 30vh;
+        // width: 24vw;
+        background-color: white;
+        border-radius: 35px;
+        padding: 5vh 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+
+        p {
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        transition: .2s;
+    }
+
+    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: #2196f3;
+    }
+
+    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #2196f3;
+    }
+
+    .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        color: #2196f3;
+    }
+
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

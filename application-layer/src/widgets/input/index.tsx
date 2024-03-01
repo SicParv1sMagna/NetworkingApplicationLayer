@@ -8,6 +8,9 @@ import { SendFab } from '../../entity/buttons';
 const ColorTextField = styled(TextField)<TextFieldProps>(() => ({
     color: blue[500],
     width: '95%',
+    'label': {
+        fontFamily: 'Inter',
+    },
     'fieldset': {
         border: '2px solid',
         borderColor: blue[100],
