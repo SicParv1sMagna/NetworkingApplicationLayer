@@ -1,57 +1,41 @@
 .chat {
-    height: 94vh;
     display: flex;
     flex-direction: column;
-
-    .navbar {
-        padding: 1rem;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .log-out {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1rem;
-
-            p b {
-                font-weight: 700;
-                color: #2196F3
-            }
-        }
-    }
+    height: 100vh;
 
     .chat--body {
-        padding: 2rem 6rem;
-        border-radius: 35px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #e3f2fd;
+        flex-grow: 1;
+        padding: 2vh 5vw;
 
         .messages {
-            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-
-            h1 {
-                width: 100%;
-                font-size: 1em;
-                font-weight: 500;
-                color: rgba(0, 0, 0, 0.5);
-                margin: 0;
-                padding: 7.5px 0;
-                text-align: center;
-            }
+            justify-content: space-between;
+            background-color: #e3f2fd;
+            border-radius: 35px;
+            padding: 1vh 0;
 
             .messages--list {
                 display: flex;
                 flex-direction: column-reverse;
+                overflow-y: auto;
+                height: 71vh;
+                padding: 1vh 5vw;
+                flex-grow: 1;
+
+                h1 {
+                    width: 100%;
+                    font-size: 1em;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.5);
+                    margin: 0;
+                    padding: 7.5px 0;
+                    text-align: center;
+                }
+            }
+
+            .messages--list::-webkit-scrollbar {
+                width: 0;
             }
         }
     }

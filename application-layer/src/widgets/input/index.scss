@@ -1,10 +1,16 @@
 .input-form {
+    position: sticky;
+    bottom: 0;
+    padding: 3vh 5vw 2vh 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
-    margin-top: 2rem;
+    width: 80vw;
+    max-height: 5vh;
+    height: 5vh;
+
 
     .MuiOutlinedInput-notchedOutline {
         transition: .2s;

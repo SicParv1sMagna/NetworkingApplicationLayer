@@ -8,6 +8,7 @@
 
     .in-message--body {
         width: fit-content;
+        max-width: 55%;
         background-color: #2196F3;
         box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
         padding: 10px 15px;
@@ -18,20 +19,56 @@
         gap: 5px;
 
         h2 {
-            font-size: 1em;
+            font-size: 0.9em;
             padding: 0;
             margin: 0;
             font-weight: 400;
         }
 
         p {
-            font-size: 0.75em;
+            font-size: 0.7em;
             padding: 0;
             margin: 0;
             font-weight: 400;
             color: rgba(255, 255, 255, 0.7);
             text-align: right;
-            
+
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .in-message--body--error {
+        width: fit-content;
+        max-width: 55%;
+        border: 1px solid #E84049;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+        padding: 10px 15px;
+        color: #E84049;
+        border-radius: 10px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h2 {
+            font-size: 0.9em;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 0.7em;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            color: #E84049;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
             img {
                 margin-left: 5px;
             }
